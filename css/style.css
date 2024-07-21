@@ -1,0 +1,278 @@
+
+*{
+margin:0 ;
+padding:0 ;
+box-sizing: border-box;
+
+}
+h1 , h2 ,h3 ,h4 {
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.container {
+width:80%;
+
+
+margin: auto;
+
+}
+
+.header {
+position: fixed;
+width: 100%;
+z-index: 10;
+    
+}
+
+body{
+
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+    }
+.clear{
+clear: both;
+
+}
+
+.pd-y{
+padding: 120px 0 ;
+
+}
+
+
+button {
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+
+
+
+
+.section-header {
+
+text-align: center;
+margin-bottom: 20px;
+
+}
+
+.section-header .section-title{
+text-transform: capitalize;
+font-size: 30px;
+margin-bottom: 10px;
+
+}
+.section-header .line {
+
+display: block;
+margin: 0 auto 70px auto ;
+width: 60px;
+height: 5px;
+background-color: #6195ff;
+}
+
+.hover-opacity {
+transition:opacity .5s ;
+
+}
+
+
+.hover-opacity:hover {
+opacity: 0.8;
+
+}
+/*.header-content {
+
+    overflow: hidden;
+}*/
+
+
+.header .logo {
+
+width:40% ;
+float: left;
+
+}
+.header .logo img {
+margin-top: 15px;
+width: 20%;
+
+
+}
+.header .nav {
+width: 60%;
+    float: left;
+    list-style:none ;
+text-align: right;
+}
+.header .nav > li {
+    
+display: inline-block;
+/*width: 75px;*/
+text-align: right;
+}
+.header .nav > li > a {
+color:white;
+text-decoration: none;
+display: block;
+padding: 30px 15px ;
+font-size: 17px;
+}
+
+.header .nav > li > a:after{
+
+content: "";
+display: block;
+height: 3px;
+width: 0;
+background-color:#6195ff ;
+transition:width 0.5s ;/*مشان يطلع حركة لما احط المؤشر على زر من القائمة*/
+
+}
+
+.header .nav > li > a:hover:after {
+width: 100%;
+
+
+}
+
+.dropdown {
+
+    position: relative;
+}
+
+.dropdown-menu {
+position: absolute;
+background-color: #6195ff;
+width: 150px;
+    text-align: center;
+    left: -50%;
+    top: 72%;
+    /* text-decoration: none; */
+    list-style: none;
+    opacity: 0;
+visibility: hidden;
+transition:opacity 0.5s , visibility 0.5s ;
+}
+
+.dropdown-menu a {
+color: white;
+display: block;
+text-decoration: none;
+padding: 10px;
+
+
+
+}
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+
+
+}
+
+.home {
+height:100vh ;
+background-image: url(../images/background/background1.webp);
+background-size: cover;
+position: relative;
+
+}
+.overlay {
+position: absolute;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+background-color: rgba(0, 0, 0, 0.696);
+}
+
+
+.home-content {
+position: absolute;
+width: 55%;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+text-align: center;
+}
+
+.home .title {
+    color: white;
+    font-size: 3.2rem;
+    text-transform: uppercase;
+    
+    
+    }
+
+.home-desc {
+margin: 10px 0;
+color: white;
+letter-spacing: 2px;
+line-height:1 ;
+
+
+
+}
+.home .btn {
+min-width:  150px; /*يبدا العرض من 150*/
+padding: 15px 0;
+border-radius: 5px;
+border: 0;
+cursor: pointer;
+font-size: 17px;
+
+}
+
+.home .btn-start{
+margin-right: 10px ;
+background-color: white;
+
+}
+
+.home .btn-learn {
+margin-left: 10px;
+background-color: rgb(27, 104, 181);
+color: white;
+}
+.about {
+
+
+}
+.about-item {
+width: 30%;
+float: left;
+text-align: center;
+padding:50px 20px ;
+border:1px solid#e8e8e8 ;
+
+
+}
+.about-item.mg {
+margin: 0 5%;
+
+}
+.about-item .icon {
+color: #6195ff;
+margin-bottom: 10px;
+
+
+}
+
+
+.about-item-title{
+margin-bottom: 10px;
+    text-transform: capitalize;
+}
+.about-item-desc {
+letter-spacing: 1;
+margin-bottom: 10px;
+
+}
+
+.about-item-link {
+color: #6195ff;
+text-transform: capitalize;
+}
+
+
